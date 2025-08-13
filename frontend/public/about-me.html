@@ -8,6 +8,14 @@
 </head>
 <body>
 
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <span>暗色模式</span>
+    </div>
+
     <div class="container">
         <header>
             <h1>你好，我是 az</h1>
@@ -17,8 +25,15 @@
             <section class="card">
                 <h2>关于我</h2>
                 <p>
-                    就读于清华大学笃实书院，正在写<del>🐀</del>培
+                    就读于清华大学笃实书院，正在写🐀培
                 </p>
+            </section>
+
+            <section class="card">
+                <h2>网易云音乐热歌榜 (Top 10)</h2>
+                <ol id="music-chart-list">
+                    <li>正在从网络加载热歌榜...</li>
+                </ol>
             </section>
 
             <section class="card">
@@ -37,7 +52,7 @@
                     <li><strong>明日方舟界园:</strong> 沉迷中，喜欢玩术特</li>
                     <li><strong>燕云十六声:</strong> 无名心法目前两重，正在努力提升</li>
                     <li><strong>鹅鸭杀:</strong> （自诩的）欺诈领域大神</li>
-                    <li><strong>霍格沃兹之遗:</strong> 一周目</li>
+                    <li><strong>霍格沃兹之遗:</strong> 一周目中</li>
                 </ul>
             </section>
 
@@ -55,5 +70,13 @@
         </footer>
     </div>
 
+    <div id="audio-player-container">
+        <div id="song-info">
+            <span id="current-song">暂无歌曲</span>
+        </div>
+        <audio id="audio-player" controls></audio>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
